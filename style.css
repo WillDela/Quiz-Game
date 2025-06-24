@@ -11,13 +11,13 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 1rem;
-  font-family: sans-serif;
+  font-family: sans-serif, Arial, Helvetica;
 }
 
 .containter {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 10px 050px rgb(0, 0, 0, 0.3);
   width: 100%;
   max-width: 600px;
   overflow: hidden;
@@ -37,9 +37,15 @@ body {
 /* start screen */
 
 #start-screen h1{
-  color: rgb(247, 148, 0);
-  margin-bottom: 20px;
+  color: rgb(222, 102, 17);
+  margin-bottom: 15px;
   font-size: 2.5rem;
+}
+
+#start-screen p{
+  color: rgb(83, 83, 83);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
 }
 
 .quiz-header{
@@ -115,4 +121,63 @@ body {
 #result-screen h1{
   color: orange;
   margin-bottom: 30px;
+}
+
+.result-info{
+  background-color: rgb(254, 250, 246);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.result-info p {
+  font-size: 1.2rem;
+  color: rgb(96, 95, 95);
+  margin-bottom: 1rem;
+}
+
+.result-message{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(232, 106, 51);
+}
+
+button{
+  background-color: rgb(232, 106, 51);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover{
+  background-color: #d45b28;
+}
+
+/* responsive design */
+
+@media (max-width:500px){
+  .screen{
+    padding: 1rem;
+  }
+
+  #start-screen h1 {
+    font-size:2rem;
+  }
+
+  #question-text {
+    font-size: 1.3rem;
+  }
+
+  .answer-btn{
+    padding: 12px;
+  }
+
+  button{
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
 }
