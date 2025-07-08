@@ -12,4 +12,4 @@ const finalScoreSpan = document.getElementById("final-score");
 const maxScoreSpan = document.getElementById("max-score");
 const resultMessage = document.getElementById("result-message");
 const restartButton = document.getElementById("restart-btn");
-const progressBar = document.getElementById("progress");
+const progressBar = document.getElementById("progress"); 
