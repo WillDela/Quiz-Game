@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="containter">
+    <div class="container">
       <div class="screen active" id="start-screen">
         <h1>Quiz Time!</h1>
         <p>Test your knowledge with these questions!</p>
@@ -17,9 +17,9 @@
       <div class="screen" id="quiz-screen">
         <div class="quiz-header">
           <h2 id="question-text">Question goes here</h2>
-          <div class="quiz info">
+          <div class="quiz-info">
             <p>
-              Question <span id="current-question">1</span> of <span> 5</span>
+              Question <span id="current-question">1</span> of <span id="total-questions">5</span>
             </p>
             <p>Score: <span id="score">0</span></p>
           </div>
@@ -37,7 +37,7 @@
         <div class="results-info">
           <p>
             You scored <span id="final-score">0</span> out of
-            <span id="max-score"> 5</span>
+            <span id="max-score">5</span>
           </p>
           <div id="result-message">Good job!</div>
           <button id="restart-btn">Restart Quiz</button>

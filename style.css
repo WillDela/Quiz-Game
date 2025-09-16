@@ -14,10 +14,10 @@ body {
   font-family: sans-serif, Arial, Helvetica;
 }
 
-.containter {
+.container {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 10px 050px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 10px 50px rgb(0, 0, 0, 0.3);
   width: 100%;
   max-width: 600px;
   overflow: hidden;
@@ -53,33 +53,35 @@ body {
 }
 
 #question-text {
-  color: grey;
-  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
   margin-bottom: 1rem;
   line-height:1.4;
 }
 
-.quiz-info{
+.quiz-info {
+  font-size: 1.25rem;
   display: flex;
   justify-content: space-between;
-  color: lightgray;
+  color: rgb(94, 94, 94);
   margin-bottom: 10px
 }
 
 .answers-container{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 25px;
 }
 
 .answer-btn{
   background-color: white;
-  color: grey;
-  border: 2px solid rgb(255, 238, 226);
+  color: rgb(49, 49, 49);
+  border: 3px solid rgb(255, 238, 226);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.1rem;
   cursor: pointer;
+  font-weight: 600;
   text-align: left;
   transition:all 0.3s ease;
 }
@@ -123,20 +125,20 @@ body {
   margin-bottom: 30px;
 }
 
-.result-info{
+.results-info{
   background-color: rgb(254, 250, 246);
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
 }
 
-.result-info p {
+.results-info p {
   font-size: 1.2rem;
   color: rgb(96, 95, 95);
   margin-bottom: 1rem;
 }
 
-.result-message{
+#result-message{
   font-size: 1.5rem;
   font-weight: 600;
   color: rgb(232, 106, 51);
